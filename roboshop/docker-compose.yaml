@@ -2,7 +2,7 @@ version: "3.9"
 networks:
   roboshop:
   driver: bridge
-  
+
 services:
   web:
    image: web:v1
@@ -16,6 +16,16 @@ services:
     container_name: catalagoue
     depends_on:
       - mongodb
+  user:
+    image: user:v1
+    container_name: user
+    depends_on:
+      - mongodb
+      - redis
+  redis:
+    image: redis
+
+    
 
 
 

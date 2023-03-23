@@ -7,7 +7,8 @@ services:
   web:
    image: web:v1
    conatiner_name: web
-   depends_on: catalogue
+   depends_on: 
+    - catalogue
   mongodb:
    image: mongodb:v1
    container_name: mongodb

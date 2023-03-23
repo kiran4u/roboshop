@@ -1,7 +1,7 @@
 version: "3.9"
 networks:
   roboshop:
-  driver: bridge
+    driver: bridge
 
 services:
   web:
@@ -25,7 +25,7 @@ services:
   redis:
     image: redis
 
-    
+
 
 
 

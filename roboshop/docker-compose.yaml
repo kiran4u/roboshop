@@ -43,7 +43,7 @@ services:
   shipping:
     image: shipping:v1
     container_name: shipping
-     depends_on:
+    depends_on:
      - mysql
      
 

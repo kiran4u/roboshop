@@ -6,7 +6,7 @@ networks:
 services:
   web:
    image: web:v1
-   conatiner_name: web
+   container_name: web
    depends_on: 
     - catalogue
   mongodb:

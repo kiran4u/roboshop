@@ -50,6 +50,10 @@ Commands:
   232  docker logs catalogue
 
 
+  # Shell Script:
+  for i in web mongo catalogue user cart mysql shipping; do cd $i ; docker build -t $i:v1 . ; cd ..; done
+
+
 
 
 

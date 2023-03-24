@@ -6,8 +6,8 @@ WORKDIR /opt/server
 
 COPY package.json /opt/server/
 
-#npm install get the dependencies of Mode js project
-RUN npm install
+# npm install get the dependencies of node js project
+RUN npm install 
 
 COPY server.js /opt/server/
 
